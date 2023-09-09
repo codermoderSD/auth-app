@@ -88,7 +88,7 @@ const LoginPage: React.FC = () => {
           )}
         </button>
         <p className="mt-1 text-sm text-gray-500">
-          Don't have an account?{" "}
+          Don&apos;t have an account?{" "}
           <Link className="text-blue-500" href="/signup">
             Signup
           </Link>

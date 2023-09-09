@@ -29,7 +29,6 @@ const ForgotPasswordPage: React.FC = () => {
       setButtonDisabled(true);
       const response = await axios.post("/api/users/forgotpassword", { email });
       toast.success(response.data.message);
-      response;
     } catch (error: any) {
       return toast.error(error.response.data.error);
     } finally {
@@ -43,7 +42,8 @@ const ForgotPasswordPage: React.FC = () => {
       <Toaster position="top-right" reverseOrder={false} />
       <h1 className="text-2xl mb-2 text-white">Forgot Password</h1>
       <p className="text-gray-500 mb-4 text-center">
-        Enter your email and we'll send you a link to <br /> reset your password
+        Enter your email and we&apos;ll send you a link to <br /> reset your
+        password
       </p>
       <form
         className="bg-zinc-900 rounded-lg px-4 py-2 mb-2 flex flex-col items-center shadow-md"
